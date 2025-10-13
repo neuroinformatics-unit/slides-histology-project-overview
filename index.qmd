@@ -211,5 +211,8 @@ pprint(VISp)
 [github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration)
 :::
 
-
-# [BrainGlobe website](https://brainglobe.info/){preview-link="true" style="text-align: center"}
+## BrainGlobe Atlas API V2
+- Cloud optimised storage format (Zarr)
+- Define atlas as a small config (YAML) file
+- Allow template and annotation images to be reused across atlases
+- Support custom user atlases (as long as they're in the same coordinate space)
