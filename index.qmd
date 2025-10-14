@@ -1,12 +1,13 @@
 ---
-title: Portugal Retreat 2025
+title: AIND--NIU--IBL retreat
+subtitle: Histology at the NIU
 execute: 
   enabled: true
 format:
     revealjs:
         theme: [default, niu-light.scss]
         logo: img/logo_niu_light.png
-        footer: "AIND/NIU/IBL retreat | 2025-10-13"
+        footer: "AIND--NIU--IBL retreat | 2025-10-15"
         slide-number: c
         menu:
             numbers: true
@@ -25,6 +26,24 @@ format:
           curve: linear
 ---
 
+## Team
+
+<br/>
+
+::: {.columns}
+:::: {.column width=25%}
+![Adam Tyson](img/adam_tyson.jpg)
+::::
+:::: {.column width=25%}
+![Alessandro Felder](img/alessandro_felder.png)
+::::
+:::: {.column width=25%}
+![Niko Sirmpilatze](img/niko_sirmpilatze.png)
+::::
+:::: {.column width=25%}
+![Igor Tatarnikov](img/igor_tatarnikov.png)
+::::
+:::
 
 # Current BrainGlobe tools
 
@@ -168,7 +187,7 @@ pprint(VISp)
 
 ## Visualisation
 ### [`brainrender`](https://github.com/brainglobe/brainrender)
-::: {.columns}
+:::: {.columns}
 ::: {.column width="33%"}
 ![](img/br-mouse.png){fig-align="center" height=300px}
 :::
@@ -178,7 +197,8 @@ pprint(VISp)
 ::: {.column width="33%"}
 ![](img/br-zebrafish.png){fig-align="center" height=300px}
 :::
-:::
+::::
+
 ::: footer
 [Claudi, F. et al. (2021) “Visualizing anatomically registered data with Brainrender” eLife](https://doi.org/10.7554/eLife.65751)
 :::
@@ -190,13 +210,6 @@ pprint(VISp)
 [Claudi, F. et al. (2021) “Visualizing anatomically registered data with Brainrender” eLife, 10:e65751](https://doi.org/10.7554/eLife.65751)
 :::
 
-## Building novel atlases
-![](img/blackcap_figure3_closeupSNR.png){fig-align="center" width=120%}
-
-::: footer
-[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
-:::
-
 ## Consistent napari environment
 ![](img/brainrender-napari.png){fig-align="center"}
 
@@ -204,15 +217,40 @@ pprint(VISp)
 [github.com/brainglobe/brainrender-napari](https://github.com/brainglobe/brainrender-napari)
 :::
 
-## Support for more data types
-![](img/annotations_front_light_mode.png){fig-align="center"}
+# What we're working on now
 
+## [`brainglobe-registration`](https://github.com/brainglobe/brainglobe-registration)
+::::{.columns}
+:::{.column width=60%}
+
+<br/>
+
+:::::{style="font-size: 70%;"}
+- 2D, 3D subvolume and whole brain
+- Uses Elastix as the registration backend
+- Automatic initialisation using Bayesian Optimisation
+:::::
+:::
+
+:::{.column width=40%}
+![](img/annotations_front_light_mode.png){fig-align="center"}
+:::
+
+::::
 ::: footer
 [github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration)
 :::
 
-## BrainGlobe Atlas API V2
-- Cloud optimised storage format (Zarr)
-- Define atlas as a small config (YAML) file
-- Allow template and annotation images to be reused across atlases
-- Support custom user atlases (as long as they're in the same coordinate space)
+## Building novel atlases
+![](img/blackcap_figure3_closeupSNR.png){fig-align="center" width=120%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+
+## BrainGlobe Atlas API V2 {.incremental .smaller}
+- Cloud optimised storage format
+- Define atlas as a config (YAML) file
+- Allow template and annotation images to be used by multiple atlases
+- Support custom user-defined atlases
