@@ -1,29 +1,9 @@
 ---
-title: AIND--NIU--IBL retreat
-subtitle: Histology at the NIU
-execute: 
-  enabled: true
+title: Histology Projects Overview
+subtitle: SWC/GCNU Neuroinformatics Unit
 format:
-    revealjs:
-        theme: [default, niu-light.scss]
-        logo: img/logo_niu_light.png
-        footer: "AIND--NIU--IBL retreat | 2025-10-15"
-        slide-number: c
-        menu:
-            numbers: true
-        chalkboard: true
-        scrollable: true
-        preview-links: false
-        view-distance: 10
-        mobile-view-distance: 10
-        auto-animate: true
-        auto-play-media: true
-        code-overflow: wrap
-        highlight-style: atom-one
-        mermaid: 
-          theme: neutral
-          fontFamily: arial
-          curve: linear
+  revealjs:
+      footer: "IBL--AIND--NIU retreat | 2025-10-15"
 ---
 
 ## Team
@@ -31,21 +11,24 @@ format:
 <br/>
 
 ::: {.columns}
-:::: {.column width=25%}
+:::: {.column width=20%}
 ![Adam Tyson](img/adam_tyson.jpg)
 ::::
-:::: {.column width=25%}
+:::: {.column width=20%}
 ![Alessandro Felder](img/alessandro_felder.png)
 ::::
-:::: {.column width=25%}
+:::: {.column width=20%}
+![Igor Tatarnikov](img/igor_tatarnikov.png)
+::::
+:::: {.column width=20%}
 ![Niko Sirmpilatze](img/niko_sirmpilatze.png)
 ::::
-:::: {.column width=25%}
-![Igor Tatarnikov](img/igor_tatarnikov.png)
+:::: {.column width=20%}
+![Viktor Plattner](img/viktor_plattner.jpg)
 ::::
 :::
 
-# Current BrainGlobe tools
+# Current Tools
 
 ## BrainGlobe Atlas API
 ### [brainglobe-atlasapi](https://github.com/brainglobe/brainglobe-atlasapi)
@@ -217,7 +200,7 @@ pprint(VISp)
 [github.com/brainglobe/brainrender-napari](https://github.com/brainglobe/brainrender-napari)
 :::
 
-# What we're working on now
+# Ongoing Projects
 
 ## [`brainglobe-registration`](https://github.com/brainglobe/brainglobe-registration)
 ::::{.columns}
