@@ -237,3 +237,5 @@ pprint(VISp)
 - Define atlas as a config (YAML) file
 - Allow template and annotation images to be used by multiple atlases
 - Support custom user-defined atlases
+
+## Thank you {background-video="img/cellfinder_small.mp4" background-video-loop="true"}
